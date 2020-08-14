@@ -4,11 +4,13 @@ import {
   Text,
   View,
   Image,
-  TouchableHighlight
+  TouchableHighlight,
+
 } from 'react-native';
 import styles from './styles';
 import { categories } from '../../data/dataArrays';
 import { getNumberOfRecipes } from '../../data/MockDataAPI';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default class CategoriesScreen extends React.Component {
   static navigationOptions = {
@@ -31,6 +33,8 @@ export default class CategoriesScreen extends React.Component {
         <Image style={styles.categoriesPhoto} source={{ uri: item.photo_url }} />
         <Text style={styles.categoriesName}>{item.name}</Text>
         <Text style={styles.categoriesInfo}>{getNumberOfRecipes(item.id)} recipes</Text>
+    
+
       </View>
     </TouchableHighlight>
   );

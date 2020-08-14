@@ -37,7 +37,11 @@ const styles = StyleSheet.create({
   categoriesInfo: {
     marginTop: 3,
     marginBottom: 5
-  }
+  },
+icon:{
+  marginTop:3,
+  marginLeft:15
+}
 });
 
 export default styles;

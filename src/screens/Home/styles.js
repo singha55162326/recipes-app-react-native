@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   photo: RecipeCard.photo,
   title: RecipeCard.title,
   category: RecipeCard.category
+  
 });
 
 export default styles;
